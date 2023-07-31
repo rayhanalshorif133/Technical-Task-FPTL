@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\TaskController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -50,6 +51,12 @@ Route::middleware('auth')->group(function () {
             Route::post('/store', [TaskController::class, 'store'])->name('store');
             Route::post('/assign-store', [TaskController::class, 'assignStore'])->name('assign.store');
     });
+});
+
+Route::prefix('send-mail')
+->name('send-mail.')
+->group(function(){
+    Route::get('/', [MailController::class, 'sendMail'])->name('index');
 });
 
 require __DIR__.'/auth.php';
