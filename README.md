@@ -45,3 +45,4 @@
   ```html
   php artisan serve
   ```
+- Final step: Goto http://localhost:8000/ and Login
