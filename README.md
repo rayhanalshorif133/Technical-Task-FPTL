@@ -35,7 +35,7 @@
   ```
   ##Note:
   Automatically create new 3 to 4 user and task as a demo (For using seeder)
-- Step 8: Run this command
+- Step 8: Run this command in another CMD
   ```html
   php artisan serve
   ```
