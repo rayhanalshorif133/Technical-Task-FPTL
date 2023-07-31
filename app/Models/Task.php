@@ -16,4 +16,9 @@ class Task extends Model
         'description',
         'deadline',
     ];
+
+    public function taskAssign()
+    {
+        return $this->hasMany(TaskAssign::class);
+    }
 }

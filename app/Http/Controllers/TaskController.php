@@ -16,6 +16,7 @@ class TaskController extends Controller
     {
         $tasks = Task::select()
             ->orderBy('id', 'desc')
+            ->with('taskAssign','taskAssign.user')
             ->get();
         $users = User::select()
             ->orderBy('id', 'desc')

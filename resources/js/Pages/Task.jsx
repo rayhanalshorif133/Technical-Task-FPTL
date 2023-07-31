@@ -10,6 +10,8 @@ export default function Task(props) {
 
     const {users,tasks} = props?.usersAndTasks;
 
+    console.log(tasks);
+
 
     const handleAssignTask = () => {
         setAssignTask(!assignTask);

@@ -30,6 +30,18 @@ export default function Table({ths, data}) {
                         </td>
                         <td className="px-4 py-2 border-[1px] border-gray-300">{item.description}</td>
                         <td className="px-4 py-2 border-[1px] border-gray-300">{item.deadline}</td>
+                        <td className="px-4 py-2 border-[1px] border-gray-300">
+                            {
+                                item.task_assign.length > 0 ? item.task_assign.map((taskAssign, index) => (
+                                    <span key={index} className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        {taskAssign.user.name}
+                                    </span>
+                                )) :
+                                <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                    Not Assigned
+                                </span>
+                            }
+                        </td>
                     </tr>
                 ))
             }
