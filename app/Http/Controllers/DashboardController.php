@@ -11,7 +11,6 @@ class DashboardController extends Controller
     public function index()
     {
         $tasks = Task::all()->count();
-        dd($tasks);
         return Inertia::render('Dashboard', compact('tasks'));
     }
 }
