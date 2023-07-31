@@ -27,15 +27,21 @@
   ```
 - Step 6: Run this command
   ```html
-  npm run dev
-  ```
-- Step 7: Run this command
-  ```html
   php artisan migrate:fresh
   ```
-  ##Note:
+  - Note:
   Automatically create new 3 to 4 user and task as a demo (For using seeder)
-- Step 8: Run this command in another CMD
+  - Email: admin@example.com
+  - Password: password
+- Step 7: Run this command 
+  ```html
+  php artisan key:generate 
+  ```
+- Step 8: Run this command
+  ```html
+  npm run dev
+  ```
+- Step 9: Run this command in another CMD
   ```html
   php artisan serve
   ```
