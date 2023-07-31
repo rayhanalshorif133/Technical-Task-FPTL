@@ -1,5 +1,6 @@
 <?php
 
+use Database\Seeders\DatabaseSeeder;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -20,6 +21,10 @@ return new class extends Migration
             $table->foreignId('assigned_by')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
+
+
+        $databaseSeeder = new DatabaseSeeder();
+        $databaseSeeder->run();
     }
 
     /**

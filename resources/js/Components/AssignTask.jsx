@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import InputLabel from './InputLabel'
 import { useForm } from '@inertiajs/react';
 
-export default function AssignTask({tasksAndUsers}) {
+export default function AssignTask({tasksAndUsers,handleAssignTask}) {
 
     const {users,tasks} = tasksAndUsers;
 
@@ -24,6 +24,7 @@ export default function AssignTask({tasksAndUsers}) {
     const submit = (e) => {
         e.preventDefault();
         post(route('task.assign.store'));
+        handleAssignTask();
     };
 
 

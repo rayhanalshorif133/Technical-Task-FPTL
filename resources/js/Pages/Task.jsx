@@ -10,7 +10,6 @@ export default function Task(props) {
 
     const {users,tasks} = props?.usersAndTasks;
 
-    console.log(tasks);
 
 
     const handleAssignTask = () => {
@@ -47,7 +46,7 @@ export default function Task(props) {
                     {
                         assignTask &&
                         <div className='flex justify-center my-10 bg-white rounded-xl p-5 border-[2px] border-gray-200 shadow-sm'>
-                            <AssignTask tasksAndUsers={props?.usersAndTasks}/>
+                            <AssignTask tasksAndUsers={props?.usersAndTasks} handleAssignTask={handleAssignTask}/>
                         </div>
                     }
 
