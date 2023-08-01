@@ -35,6 +35,7 @@ class TaskNotify extends Mailable
         return new Envelope(
             subject: 'Task Notify',
         );
+
     }
 
     /**
@@ -44,10 +45,16 @@ class TaskNotify extends Mailable
      */
     public function content()
     {
+
+        
         return new Content(
             view: 'emails.task-notify',
-            html: '<div>Hello</div>',
-           
+            with: [
+                'taskTitle' => $this->data['title'],
+                'taskStatus' => $this->data['status'],
+                'userName' => $this->data['userName'],
+                'assignedUserName' => $this->data['assignedUserName'],
+            ],        
         );
     }
 

@@ -9,6 +9,8 @@ use App\Models\Task;
 use App\Models\TaskAssign;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
+use App\Mail\TaskNotify;
+use Mail;
 
 class TaskController extends Controller
 {
@@ -81,6 +83,17 @@ class TaskController extends Controller
             $taskAssign->user_id = $user->id;
             $taskAssign->assigned_by = Auth()->user()->id;
             $taskAssign->save();
+
+
+            // send Mail notification
+            $mailData = [
+                'title' => $task->title,
+                'status' => $task->status,
+                'userName' => $user->name,
+                'assignedUserName' => Auth()->user()->name
+            ];
+
+            Mail::to('rayhanalshorif2@gmail.com')->send(new TaskNotify($mailData));
         }
         return Redirect::route('task.index')->with('success', 'Task assigned successfully');
     }

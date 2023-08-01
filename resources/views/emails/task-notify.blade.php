@@ -13,9 +13,24 @@
     </title>
   </head>
   <body>
-    <h1>
-        Hello
-    </h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Task Notification</h3>
+                <h4>Dear {{ $userName }},</h4>
+                <p>
+                    A task has been assigned to you named {{$assignedUserName}}. Please check it.
+                </p>
+                <p>
+                    <b>Task Title:</b> {{ $taskTitle }}
+                </p>
+                <p>
+                  <b>Task Status:</b> {{ $taskStatus }} , <b>Thank You.!!!</b> 😊.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
