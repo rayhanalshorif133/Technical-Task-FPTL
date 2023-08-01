@@ -53,10 +53,6 @@ Route::middleware('auth')->group(function () {
     });
 });
 
-Route::prefix('send-mail')
-->name('send-mail.')
-->group(function(){
-    Route::get('/', [MailController::class, 'sendMail'])->name('index');
-});
+
 
 require __DIR__.'/auth.php';
