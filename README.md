@@ -1,3 +1,12 @@
+## Task-Details
+- User Registration: A new user should be able to register themselves providing essential details like name, email, and password.
+- User Login/Logout: Users should be able to log in and log out of the system.
+- Task Creation: Logged-in users should be able to create tasks. Each task should include a title, status(open, in-progress, done), description, and deadline.
+- Task Assignment: Users should be able to assign tasks to other registered users. An email notification should be sent to the assignee when a task is assigned.
+
+## Video-Link
+- https://drive.google.com/file/d/1O81w3YCQjqK7rljStBbDIc3zpgKZ9EWG/view?usp=sharing
+
 
 ## Quick-Start
 
