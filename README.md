@@ -5,7 +5,8 @@
 - Task Assignment: Users should be able to assign tasks to other registered users. An email notification should be sent to the assignee when a task is assigned.
 
 ## Porject View
-- <p align="center">
+- ## Note: Click and watch the video
+<p align="center">
   <a href="https://drive.google.com/file/d/1O81w3YCQjqK7rljStBbDIc3zpgKZ9EWG/view?usp=sharing">
     <img
       src="https://github.com/rayhanalshorif133/Technical-Test-FPTL/blob/development/public/images/Technical_Test_(Fingerprint_Technology_Limited).gif"
