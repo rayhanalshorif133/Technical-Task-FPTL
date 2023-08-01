@@ -7,6 +7,17 @@
 ## Video-Link
 - https://drive.google.com/file/d/1O81w3YCQjqK7rljStBbDIc3zpgKZ9EWG/view?usp=sharing
 
+- <p align="center">
+  <a href="https://drive.google.com/file/d/1O81w3YCQjqK7rljStBbDIc3zpgKZ9EWG/view?usp=sharing">
+    <img
+      src="https://github.com/rayhanalshorif133/Technical-Test-FPTL/blob/development/public/images/Technical_Test_(Fingerprint_Technology_Limited).gif"
+      alt="Bootstrap logo"
+      width="auto"
+      height="auto"
+    />
+  </a>
+</p>
+
 
 ## Quick-Start
 
